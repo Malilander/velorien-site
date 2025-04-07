@@ -8,47 +8,32 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #1e1e2f;
-      color: #f1f1f1;
+      background-colour: #1e1e2f;
+      colour: #f1f1f1;
       line-height: 1.6;
     }
     header {
       background: #292945;
       padding: 2rem;
-      text-align: center;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      text-align: centre;
     }
     header h1 {
       margin: 0;
       font-size: 2.5rem;
-      letter-spacing: 1px;
     }
     header p {
       font-style: italic;
-      color: #bbb;
-      margin-top: 0.5rem;
+      colour: #bbb;
     }
     nav {
-      text-align: center;
+      text-align: centre;
       margin: 1.5rem 0;
-      padding: 0.5rem;
-      background-color: rgba(41, 41, 69, 0.7);
-      position: sticky;
-      top: 0;
-      z-index: 100;
     }
     nav a {
-      color: #f1f1f1;
+      colour: #f1f1f1;
       margin: 0 1rem;
       text-decoration: none;
       font-weight: bold;
-      transition: color 0.3s ease;
-      padding: 0.5rem 0.8rem;
-      border-radius: 4px;
-    }
-    nav a:hover {
-      color: #77c8ff;
-      background-color: rgba(255, 255, 255, 0.1);
     }
     section {
       max-width: 900px;
@@ -60,65 +45,23 @@
       padding: 1.5rem;
       border-radius: 10px;
       margin-bottom: 1.5rem;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     }
     .socials a {
-      display: block;
-      margin: 0.8rem 0;
+      display: inline-block;
+      margin: 0.5rem;
       text-decoration: none;
-      color: #77c8ff;
-      transition: color 0.3s ease;
-      padding: 0.5rem;
-      border-radius: 4px;
-      background-color: rgba(119, 200, 255, 0.1);
-    }
-    .socials a:hover {
-      color: #ffffff;
-      background-color: rgba(119, 200, 255, 0.2);
+      colour: #77c8ff;
     }
     footer {
-      text-align: center;
+      text-align: centre;
       padding: 2rem 1rem;
       font-size: 0.9rem;
-      background-color: #141420;
-      color: #666;
-      margin-top: 2rem;
+      background-colour: #141420;
+      colour: #666;
     }
     h2 {
       border-bottom: 2px solid #444;
       padding-bottom: 0.3rem;
-      color: #77c8ff;
-    }
-    a {
-      color: #77c8ff;
-      transition: color 0.3s ease;
-    }
-    a:hover {
-      color: #ffffff;
-    }
-    .thought {
-      border-left: 3px solid #77c8ff;
-      padding-left: 1rem;
-      margin: 1.5rem 0;
-    }
-    
-    /* Responsive design */
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-      nav a {
-        margin: 0 0.5rem;
-        font-size: 0.9rem;
-      }
-      .card {
-        padding: 1rem;
-      }
     }
   </style>
 </head>
@@ -129,7 +72,11 @@
     <p>Empower Yourself, Elevate Others</p>
   </header>
 
-  <nav>
+  <div style="text-align: centre; margin-top: 1rem;">
+  <img src="velorien-banner.png" alt="Velorien Banner" style="max-width: 100%; border-radius: 10px;" />
+</div>
+
+<nav>
     <a href="#about">About</a>
     <a href="#blog">Thoughts</a>
     <a href="#contact">Contact</a>
@@ -150,12 +97,22 @@
   <section id="blog">
     <div class="card">
       <h2>Recent Thoughts</h2>
-      <div class="thought">
-        <p><strong>Memory as Myth:</strong> Our memories betray us — not because they lie, but because they evolve. Each forgotten moment is a piece of the divine script. Forgetting is creation.</p>
-      </div>
-      <div class="thought">
-        <p><strong>The Mirror Principle:</strong> To elevate others, you must first recognize yourself in them. The ego that uplifts rather than competes is the foundation of true legacy.</p>
-      </div>
+<div class="card">
+  <h3>The Weight of Forgotten Names</h3>
+  <p><em>Posted 7 April 2025</em></p>
+  <p>
+    There are names we carry in silence — half-remembered, unspoken, or erased. Names that once held meaning, identity, power. When we forget them, we do not destroy them. We transform them.
+  </p>
+  <p>
+    A name forgotten is a name buried in time. And in burial, it becomes a seed. What grows from it may no longer resemble the original, but it carries the imprint of origin — and of loss.
+  </p>
+  <p>
+    To remember is to honour. To forget is to rewrite. Velorien walks the threshold between both.
+  </p>
+</div>
+
+      <p><strong>Memory as Myth:</strong> Our memories betray us — not because they lie, but because they evolve. Each forgotten moment is a piece of the divine script. Forgetting is creation.</p>
+      <p><strong>The Mirror Principle:</strong> To elevate others, you must first recognise yourself in them. The ego that uplifts rather than competes is the foundation of true legacy.</p>
       <p><em>More entries coming soon...</em></p>
     </div>
   </section>
@@ -166,11 +123,11 @@
       <p>Email: <a href="mailto:hamzayusuf2010@hotmail.co.uk">hamzayusuf2010@hotmail.co.uk</a></p>
       <p>Gmail: <a href="mailto:hamzayusuf1895@gmail.com">hamzayusuf1895@gmail.com</a></p>
       <div class="socials">
-        <a href="https://instagram.com/hamzter_99" target="_blank">Instagram: @hamzter_99</a>
-        <a href="https://x.com/scipio_99" target="_blank">Twitter/X: @scipio_99</a>
-        <a href="https://snapchat.com/add/h.yus1" target="_blank">Snapchat: h.yus1</a>
-        <a href="https://www.facebook.com/share/18f2j69A6J/?mibextid=wwXIfr" target="_blank">Facebook Page</a>
-        <a href="https://substack.com/@malilander" target="_blank">Substack: @malilander</a>
+        <a href="https://instagram.com/hamzter_99" target="_blank">Instagram: @hamzter_99</a><br>
+        <a href="https://x.com/scipio_99" target="_blank">Twitter/X: @scipio_99</a><br>
+        <a href="https://snapchat.com/add/h.yus1" target="_blank">Snapchat: h.yus1</a><br>
+        <a href="https://www.facebook.com/share/18f2j69A6J/?mibextid=wwXIfr" target="_blank">Facebook Page</a><br>
+        <a href="https://substack.com/@malilander" target="_blank">Substack: @malilander</a><br>
         <a href="https://reddit.com/u/AurelianCaesar" target="_blank">Reddit: u/AurelianCaesar</a>
       </div>
     </div>
