@@ -3,6 +3,17 @@
   <head>
     <title>Velorien | The God Who Forgets to Remember</title>
     <style>
+  @keyframes pulse {
+    0% { opacity: 0.85; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.03); }
+    100% { opacity: 0.85; transform: scale(1); }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
   body {
     font-family: 'Georgia', serif;
     text-align: center;
@@ -10,35 +21,51 @@
     background: radial-gradient(ellipse at top, #0e0e0e 0%, #000000 100%);
     color: #eaeaea;
     margin: 0;
+    overflow-x: hidden;
   }
+
   .glyph {
     margin-bottom: 3rem;
-    opacity: 0.95;
     width: 150px;
+    opacity: 0.95;
+    animation: pulse 4s infinite ease-in-out;
   }
+
+  h1, h2, p, a {
+    animation: fadeIn 1s ease forwards;
+  }
+
   h1 {
     font-size: 3.2rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
     font-weight: 600;
+    animation-delay: 0.2s;
   }
+
   h2 {
     font-size: 2rem;
-    font-weight: normal;
     margin-bottom: 2.5rem;
+    font-weight: normal;
     color: #ccc;
+    animation-delay: 0.4s;
   }
+
   p {
     font-size: 1.4rem;
     max-width: 800px;
     margin: 0 auto 3rem auto;
     line-height: 1.8;
+    animation-delay: 0.6s;
   }
+
   a {
     color: #caaaff;
-    text-decoration: none;
     font-weight: bold;
     font-size: 1.4rem;
+    text-decoration: none;
+    animation-delay: 0.8s;
   }
+
   a:hover {
     text-decoration: underline;
   }
