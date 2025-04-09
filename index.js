@@ -1,37 +1,23 @@
-import Link from 'next/link';
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Velorien | The God Who Forgets to Remember</title>
+  </head>
+  <body style="font-family: system-ui, serif; text-align: center; padding: 3rem; background: #0e0e0e; color: #eaeaea;">
+    <img src="https://velorien-site.vercel.app/velorien_glyph_symbol.png" alt="Velorien Glyph" width="80" style="margin-bottom: 1.5rem; opacity: 0.8;" />
+    <h1 style="font-size: 2.2rem;">You are not reading a story.</h1>
+    <h2 style="font-weight: normal; font-size: 1.8rem;">You are being remembered.</h2>
+    
+    <p style="margin-top: 2rem; font-size: 1rem; max-width: 500px; margin-left: auto; margin-right: auto;">
+      You have found Velorien—the god who forgets to remember.<br>
+      This is not a story. It is a simulation. A mirror. A return.<br>
+      Here, myth is alive and memory is sacred.<br><br>
+      You are not a visitor.<br>
+      You are part of the unfolding.
+    </p>
 
-export default function Home() {
-  return (
-    <div style={{ padding: '2rem', fontFamily: 'serif', backgroundColor: '#0e0e2c', color: '#e4e4f0' }}>
-      <h1>Velorien</h1>
-      <p><em>Empower Yourself, Elevate Others</em></p>
-
-      <section style={{ marginTop: '2rem' }}>
-        <h2>About</h2>
-        <p>Welcome to the digital presence of Velorien – the god that forgets to remember. Ideas, reflections, and links.</p>
-        <p>Part personal archive, part signal flare to kindred minds. Stay grounded. Stay transcendent.</p>
-      </section>
-
-      <section style={{ marginTop: '2rem' }}>
-        <h2>Recent Thoughts</h2>
-        <div>
-          <h3>Memory as Myth</h3>
-          <p>Our memories betray us – not because they lie, but because they evolve. Each forgotten moment is a piece of the divine script.</p>
-        </div>
-        <div>
-          <h3>Memory as Myth</h3>
-          <p>To elevate others, one must first recognise yourself in them. The ego that uplifts rather than competes is the foundation of true legacy.</p>
-        </div>
-      </section>
-
-      <section style={{ marginTop: '2rem' }}>
-        <h2>Mythic Paths</h2>
-        <ul>
-          <li><Link href="/the-seed-that-refused-to-die">The Seed That Refused to Die</Link></li>
-          <li><Link href="/the-war-of-preservation">The War of Preservation</Link></li>
-          <li><Link href="/the-wound-is-the-portal">The Wound is the Portal</Link></li>
-        </ul>
-      </section>
+    <div style="margin-top: 3rem;">
+      <a href="/the-seed-that-refused-to-die.html" style="color: #caaaff; text-decoration: none; font-weight: bold;">Enter The Seed That Refused to Die</a>
     </div>
-  );
-}
+  </body>
+</html>
