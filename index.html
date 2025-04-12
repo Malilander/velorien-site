@@ -3,6 +3,41 @@
   <head>
     <title>Velorien | The God Who Forgets to Remember</title>
     <style>
+    body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background: black;
+}
+
+.starfield {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at bottom, #0d0d1a 0%, #000 100%);
+  overflow: hidden;
+  z-index: -1;
+}
+
+.starfield::before {
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background-image: 
+    radial-gradient(white 1px, transparent 1px),
+    radial-gradient(white 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-position: 0 0, 25px 25px;
+  animation: moveStars 100s linear infinite;
+  opacity: 0.5;
+}
+
+@keyframes moveStars {
+  from { transform: translateY(0); }
+  to { transform: translateY(-100px); }
+}
       @keyframes pulse {
         0% { opacity: 0.85; transform: scale(1); }
         50% { opacity: 1; transform: scale(1.03); }
@@ -21,6 +56,7 @@
 
       body {
         font-family: 'Georgia', serif;
+        <div class="starfield"></div>
         text-align: center;
         padding: 10vh 5vw;
         background-color: #000;
